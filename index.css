@@ -1,15 +1,27 @@
 :root{
-    --Color1: rgba(80, 79, 89, 1);
-    --Color1-Dark: rgba(70, 69, 79, 1);
-    --Color2: rgba(28, 65, 140, 1);
-    --Color3: rgba(208, 220, 242, 1);
-    --Color4: rgba(166, 166, 166, 1);
-    --Color5: rgba(13, 13, 13, 1);
+    --Color1: rgba(0, 0, 12, 1);
+    --Color2: rgba(0, 6, 38, 1);
+    --Color3: rgba(2, 37, 140, 1);
+    --Color4: rgba(18, 67, 165, 1);
+    --Color5: rgba(15, 69, 140, 1);
+}
+
+body{
+    margin: 0;
+}
+
+.Top_Menu{
+    height: 5vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--Color3);
 }
 
 .Contener {
+    position: relative;
+    top: 50px;
     justify-content: center;
-    /* border: solid black 1px; */
     margin: 5em;
     display: grid;
     grid-template-columns: repeat(23, 1fr);
@@ -17,37 +29,122 @@
     justify-content: center;
 }
 
-/* .Contener section{
-    border: solid black 2px;
-    border-radius: 1em;
-} */
+.Contener section{
+    transition-duration: 0.4s;
+    transform: scale(1);
+}
 
-svg{
-    max-height: 50px;
+.Contener section svg{
+    position: relative;
+    float: right;
+    right: 25px;
+    top: 15px;
+    transition-duration: 0.4s;
+}
+
+.Contener section svg:hover{
+    transform: rotate(30deg);
+}
+
+.Contener section:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px;
+}
+
+.Contener section:hover #Account_Logo{
+    transform: scale(1.1);
+}
+.Contener section:hover .Account_Logo-Circle{
+    transform: scale(1.1);
 }
 
 .Contener-Account { 
     grid-area: 2 / 1 / span 4 / span 5; 
+
     height: 200px;
-    border: solid var(--Color1-Dark) 10px;
+
     border-radius: 3em;
-    background-color: var(--Color1);
+    background-color: var(--Color5);
+    border: solid black 1px;
+
+    box-shadow: 5px 5px 15px;
 }
+
+#Account_Logo{
+    position: absolute;
+
+    left: 24%;
+    top: -95px;
+    z-index: -3;
+
+    transition-duration: 0.4 ;
+}
+
+.Account_Logo-Circle{
+    position: absolute;
+    left: 120px;
+    top: -65px;
+
+    height: 140px;
+    width: 140px;
+
+    /* border: solid black 1px; */
+    border-radius: 50%;
+    background-image: url('Szadolowski.jpg');
+    background-size: cover
+}
+
+
 .Contener-ExpenseAnalysis { 
     grid-area: 7 / 1 / span 7 / span 5; 
+
+    border-radius: 3em;
+    background-color: var(--Color4);
+    border: solid black 1px;
+
+    box-shadow: 5px 5px 15px;
 }
 .Contener-Material { 
     grid-area: 1 / 7 / span 7 / span 5; 
+
+    border-radius: 3em;
+    background-color: var(--Color3);
+
+    box-shadow: 5px 5px 15px;
 }
 .Contener-AvailableDevices { 
     grid-area: 9 / 7 / span 5 / span 5; 
+
+    border-radius: 3em;
+    background-color: var(--Color5);
+    border: solid black 1px;
+
+    box-shadow: 5px 5px 15px;
 }
 .Contener-ShoppingList { 
     grid-area: 1 / 13 / span 5 / span 5; 
+
+    border-radius: 3em;
+    background-color: var(--Color4);
+    border: solid black 1px;
+
+    box-shadow: 5px 5px 15px;
 }
 .Contener-SavingsTips { 
     grid-area: 7 / 13 / span 7 / span 5; 
+
+    border-radius: 3em;
+    background-color: var(--Color3);
+    border: solid black 1px;
+
+    box-shadow: 5px 5px 15px;
 }
 .Contener-Frugality {
     grid-area: 1 / 19 / span 13 / span 5; 
+
+    border-radius: 3em;
+    background-color: var(--Color5);
+    border: solid black 1px;
+
+    box-shadow: 5px 5px 15px;
 }

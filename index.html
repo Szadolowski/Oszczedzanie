@@ -11,31 +11,63 @@
     <header class="Top_Menu"></header>
     
     <section class="Contener">
-        <section class="Contener-Account">
-            <svg id="Account_Logo" xmlns="http://www.w3.org/2000/svg" height="200" viewBox="0 -960 960 960" width="200"><path fill="rgba(19, 73, 144, 1)" d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
-            <section class="Account_Logo-Circle"></section>
-            <p class="Account-Text" style="border: solid black 1px; margin: 25% 10% 0 10%;text-align: center; font-weight: bold; font-size: x-large; color: white;">Rafał Curzydło</p>
+        <section class="Contener-Account Section--Zoom">
+        <svg id="Account_Logo" xmlns="http://www.w3.org/2000/svg" height="200" viewBox="0 -960 960 960" width="200"><path fill="rgba(19, 73, 144, 1)" d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        <section class="Account_Logo-Circle Section--Zoom"></section>
+            <p class="Account-Text">Rafał Curzydło</p>
+            <p class="Account-Text" style="font-size: large; margin-top: 2%; font-weight: 200;">Front-End Developer</p>
         </section>
-        <section class="Contener-ExpenseAnalysis">
-            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        <section class="Contener-ExpenseAnalysis Section--Zoom">
+            <svg class="Contener-Add" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+            <section class="ExpenseAnalysis_Visualization Section--Zoom">
+                <H3>Company 1</H3>
+                <section class="ExpenseAnalysis_Visualization_Text">
+                    <div class="ExpenseAnalysis_Visualization_Text-Left">
+                        <p class="Visualization_Text_Income">Income: </p>
+                        <p class="Visualization_Text_Income-Value">10,000$</p>
+                    </div>
+                    <div class="ExpenseAnalysis_Visualization_Text-Right">
+                        <p class="Visualization_Text_Expenses">Expense: </p>
+                        <p class="Visualization_Text_Expenses-Value">3,000$</p>
+                    </div>
+                </section>
+                <section class="ExpenseAnalysis_Visualization_Bar"></section>
+            </section>
+
+            <!--  -->
+            <section class="ExpenseAnalysis_Visualization Section--Zoom">
+                <H3>Company 2</H3>
+                <section class="ExpenseAnalysis_Visualization_Text">
+                    <div class="ExpenseAnalysis_Visualization_Text-Left">
+                        <p class="Visualization_Text_Income">Income: </p>
+                        <p class="Visualization_Text_Income-Value">20,000$</p>
+                    </div>
+                    <div class="ExpenseAnalysis_Visualization_Text-Right">
+                        <p class="Visualization_Text_Expenses">Expense: </p>
+                        <p class="Visualization_Text_Expenses-Value">10,000$</p>
+                    </div>
+                </section>
+                <section class="ExpenseAnalysis_Visualization_Bar" style="background-image: linear-gradient(to right,#00B300 49%, #FF0000 51%);"></section>
+            </section>
         </section>
-        <section class="Contener-Material">
-            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        <section class="Contener-Material Section--Zoom">
+            <svg class="Contener-Add" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
         </section>
-        <section class="Contener-AvailableDevices">
-            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        <section class="Contener-AvailableDevices Section--Zoom">
+            <svg class="Contener-Add" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
         </section>
-        <section class="Contener-ShoppingList">
-            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        <section class="Contener-ShoppingList Section--Zoom">
+            <svg class="Contener-Add" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
         </section>
-        <section class="Contener-SavingsTips">
-            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        <section class="Contener-SavingsTips Section--Zoom">
+            <svg class="Contener-Add" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
         </section>
-        <section class="Contener-Frugality">
-            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        <section class="Contener-Frugality Section--Zoom">
+            <svg class="Contener-Add" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path fill="white" d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
         </section>
     </section>
+
+    <footer class="Bottom_Footer"><em>Page has been created by Rafał Curzydło</em></footer>
 
 </body>
 </html>

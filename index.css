@@ -1,7 +1,7 @@
 :root{
     --Color1: rgba(0, 0, 12, 1);
     --Color2: rgba(0, 6, 38, 1);
-    --Color3: rgba(2, 37, 140, 1);
+    --Color3: rgb(2, 37, 140, 1);
     --Color4: rgba(18, 67, 165, 1);
     --Color5: rgba(15, 69, 140, 1);
 }
@@ -29,29 +29,36 @@ body{
     justify-content: center;
 }
 
-.Contener section{
+.Section--Zoom{
     transition-duration: 0.4s;
     transform: scale(1);
 }
 
-.Contener section svg{
-    position: relative;
+.Contener-Add{
+    position: absolute;
+
+    height: 40px;
+    width: 40px;
+
     float: right;
+
     right: 25px;
     top: 15px;
+
     transition-duration: 0.4s;
 }
 
-.Contener section svg:hover{
+.Contener-Add:hover{
     transform: rotate(30deg);
 }
 
-.Contener section:hover{
+.Section--Zoom:hover{
     transform: scale(1.1);
     box-shadow: 10px 10px 20px;
 }
 
 .Contener section:hover #Account_Logo{
+    transition-duration: 0.4s;
     transform: scale(1.1);
 }
 .Contener section:hover .Account_Logo-Circle{
@@ -76,9 +83,8 @@ body{
 
     left: 24%;
     top: -95px;
-    z-index: -3;
 
-    transition-duration: 0.4 ;
+    transition-duration: 0.4s ;
 }
 
 .Account_Logo-Circle{
@@ -95,6 +101,15 @@ body{
     background-size: cover
 }
 
+.Account-Text{
+    margin: 25% 10% 0 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+}
+
+/*  */
 
 .Contener-ExpenseAnalysis { 
     grid-area: 7 / 1 / span 7 / span 5; 
@@ -104,7 +119,86 @@ body{
     border: solid black 1px;
 
     box-shadow: 5px 5px 15px;
+
+    padding-top: 15%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    overflow: auto;
 }
+
+.ExpenseAnalysis_Visualization{
+    width: 90%;
+
+    background-color: var(--Color3);
+
+    border-radius: 1.5em;
+
+    margin-bottom: 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ExpenseAnalysis_Visualization h3{
+    margin: 0;
+    color: white;
+}
+
+.ExpenseAnalysis_Visualization_Text{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ExpenseAnalysis_Visualization_Text .ExpenseAnalysis_Visualization_Text-Left,.ExpenseAnalysis_Visualization_Text-Right{
+    display: flex;
+    flex-direction: row;
+}
+
+.Visualization_Text_Income{
+    color: #00B300;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 4%;
+}
+
+.Visualization_Text_Income-Value{
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.Visualization_Text_Expenses{
+    color: #FF0000;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 4%;
+}
+
+.Visualization_Text_Expenses-Value{
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.ExpenseAnalysis_Visualization_Bar{
+    width: 90%;
+    height: 15px;
+
+    margin-bottom: 2%;
+
+    border: black solid 1px;
+    border-radius: 3em;
+
+    background-image: linear-gradient(to right,#00B300 69%, #FF0000 71%);
+}
+
+/*  */
 .Contener-Material { 
     grid-area: 1 / 7 / span 7 / span 5; 
 
@@ -148,4 +242,16 @@ body{
     border: solid black 1px;
 
     box-shadow: 5px 5px 15px;
+}
+
+.Bottom_Footer{
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    background-color: var(--Color3);
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
